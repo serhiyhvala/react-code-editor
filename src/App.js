@@ -8,13 +8,13 @@ import { Preview } from './components/Preview/Preview'
 const App = () => {
   return (
     <EditorProvider>
-      <div className={styles.main}>
-        <Header />
+      <Header />
+      <div className={styles.content}>
+        <CodeBar />
+        <Preview />
       </div>
-      <CodeBar />
-      <Preview />
     </EditorProvider>
-  )
+  );
 }
 
 export default App
