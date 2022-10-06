@@ -1,8 +1,13 @@
 import React from 'react'
+import CodeBar from './components/CodeBar/CodeBar'
+import { EditorProvider } from './context/Context'
+
 
 const App = () => {
   return (
-    <div>App</div>
+    <EditorProvider>
+        <CodeBar />      
+    </EditorProvider>
   )
 }
 
