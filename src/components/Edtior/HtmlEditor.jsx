@@ -4,10 +4,10 @@ import 'ace-builds/src-noconflict/mode-html'
 import 'ace-builds/src-noconflict/theme-monokai'
 import 'ace-builds/src-noconflict/snippets/html'
 import 'ace-builds/src-noconflict/ext-language_tools'
-import { EditorProvider } from '../../context/Context'
+import { EditorContext } from '../../context/Context'
 
 export const HtmlEditor = () => {
-  const { html, setHtml } = useContext(EditorProvider)
+  const { html, setHtml } = useContext(EditorContext)
 
   return (
     <AceEditor

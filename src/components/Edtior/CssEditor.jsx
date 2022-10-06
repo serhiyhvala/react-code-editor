@@ -4,10 +4,10 @@ import 'ace-builds/src-noconflict/mode-css'
 import 'ace-builds/src-noconflict/theme-monokai'
 import 'ace-builds/src-noconflict/snippets/css'
 import 'ace-builds/src-noconflict/ext-language_tools'
-import { EditorProvider } from '../../context/Context'
+import { EditorContext } from '../../context/Context'
 
 export const CssEditor = () => {
-  const { css, setCss } = useContext(EditorProvider)
+  const { css, setCss } = useContext(EditorContext)
   return (
     <AceEditor
       placeholder="Write Your CSS Code Here"
